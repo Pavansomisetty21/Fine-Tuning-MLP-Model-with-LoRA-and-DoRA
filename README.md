@@ -3,11 +3,11 @@
 In this we fine-tune MLP with LoRA and DoRA on CIFAR-10 Dataset
 
 
-LoRA (Low-Rank Adaptation) and DoRA (Weight-Decomposed Low-Rank Adaptation) are techniques designed to fine-tune large pre-trained language models (PLMs) efficiently. Both aim to reduce the computational and storage costs of fine-tuning while maintaining or improving performance. Here's an overview:
+LoRA (Low-Rank Adaptation) [paper](https://arxiv.org/pdf/2106.09685) and DoRA (Weight-Decomposed Low-Rank Adaptation) [paper](https://arxiv.org/pdf/2402.09353) are techniques designed to fine-tune large pre-trained language models (PLMs) efficiently. Both aim to reduce the computational and storage costs of fine-tuning while maintaining or improving performance. Here's an overview:
 
 ---
 
-### **1. LoRA (Low-Rank Adaptation)**
+### **1. LoRA (Low-Rank Adaptation)**  
 
 **Key Idea:**  
 LoRA introduces a low-rank decomposition method for adapting pre-trained language models (PLMs). Instead of fine-tuning all the parameters of a PLM, LoRA focuses on a low-rank subset of parameters within the model. 
