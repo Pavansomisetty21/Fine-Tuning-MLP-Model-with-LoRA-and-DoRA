@@ -12,6 +12,7 @@ LoRA (Low-Rank Adaptation) [paper](https://arxiv.org/pdf/2106.09685) and DoRA (W
 **Key Idea:**  
 LoRA introduces a low-rank decomposition method for adapting pre-trained language models (PLMs). Instead of fine-tuning all the parameters of a PLM, LoRA focuses on a low-rank subset of parameters within the model. 
 
+
 #### **How It Works:**
 - **Parameter Decomposition:** LoRA assumes that the weight updates required for fine-tuning lie in a low-rank subspace. It represents these updates as the product of two low-rank matrices \( A \) and \( B \), where \( A \) and \( B \) are much smaller than the original parameter matrix.
 - **Frozen Base Model:** The original weights of the PLM remain frozen. LoRA injects the low-rank weight updates into the model dynamically during forward passes.
